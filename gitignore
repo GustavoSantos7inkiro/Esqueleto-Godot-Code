@@ -1,0 +1,49 @@
+# Arquivos gerados pela Godot
+.godot/
+.import/
+*.import
+
+# Exportações e builds
+build/
+builds/
+export/
+exports/
+dist/
+*.exe
+*.apk
+*.pck
+*.zip
+
+# Artes e imagens
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.svg
+*.psd
+*.kra
+*.aseprite
+
+# Áudios
+*.wav
+*.ogg
+*.mp3
+*.flac
+
+# Vídeos
+*.mp4
+*.webm
+
+# Fontes
+*.ttf
+*.otf
+
+# Arquivos de sistema e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Configurações de exportação
+export_presets.cfg
