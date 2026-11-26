@@ -8,7 +8,7 @@ const SPEED = 300.0
 @export var fireScene: PackedScene
 
 @onready var WalkAnimation = $AnimatedSprite2D
-@onready var FireScene = preload("res://scenes/fire.tscn")  # Coloque o caminho correto da sua cena de fogo
+@onready var FireScene = preload("res://scenes/fire.tscn")  
 
 var fire_timer = 0.0
 var fire_cooldown = 1.0  # Intervalo de tempo entre os disparos de fogo
@@ -42,16 +42,16 @@ func disparar_fogo():
 	var fire_instance = FireScene.instantiate()  # Instancia a cena do fogo
 	var fire_position = position  # Posição inicial do fogo
 
-	# Ajuste a posição do fogo com base na direção do movimento
-	var distance = 100  # Aumentei a distância do fogo para 100 para mais afastado
+	
+	var distance = 100  
 	if WalkAnimation.animation == "up":
-		fire_position += Vector2(0, -distance)  # Ajuste a posição para cima
+		fire_position += Vector2(0, -distance)  
 	elif WalkAnimation.animation == "down":
-		fire_position += Vector2(0, distance)  # Ajuste a posição para baixo
+		fire_position += Vector2(0, distance)  
 	elif WalkAnimation.animation == "left":
-		fire_position += Vector2(-distance, 0)  # Ajuste a posição para a esquerda
+		fire_position += Vector2(-distance, 0)  
 	elif WalkAnimation.animation == "right":
-		fire_position += Vector2(distance, 0)  # Ajuste a posição para a direita
+		fire_position += Vector2(distance, 0)  
 	
 	# Atualiza a posição do fogo com base na direção
 	fire_instance.position = fire_position
