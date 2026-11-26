@@ -11,7 +11,7 @@ const SPEED = 300.0
 @onready var FireScene = preload("res://scenes/fire.tscn")  
 
 var fire_timer = 0.0
-var fire_cooldown = 1.0  # Intervalo de tempo entre os disparos de fogo
+var fire_cooldown = 1.0  
 
 func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("ui_left", "ui_right")
